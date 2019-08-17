@@ -238,7 +238,7 @@ long GetFileInfoDC6()
 	for (i=0; i < blockcount; i++)
 	{
 		pointer_block[i] = mem;
-		(byte *)pointer_block[i] += head->pointer[i];
+		pointer_block[i] = (byte *)pointer_block[i] + head->pointer[i];
 	}
 
 // HACK
