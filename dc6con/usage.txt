@@ -1,0 +1,21 @@
+Using the tool
+
+1. Generate pcx file: dc6con.exe file.dc6
+2. Rename generated file.pcx to file_new.pcx
+3. Open file_new.pcx in irfanview for editing
+4. Edit file/copy paste stuff using irfanview:
+
+  In the smaller image that you wish to copy: Select All (Ctrl A)
+  Create custom selection (Shift C), Save current values, OK
+  Copy the selection (the whole image)
+  Switch to the target image
+  Create custom selection (Shift C), enter some X,Y offsets if you wish
+  Shift + Cursor keys to move the selection to where you want it.
+  Paste (Control V) to paste the small image into the selection
+
+5. Ensure change PCX is saved as 8BPP  = 8 bits per pixel
+6. convert new file back to .PCX: dc6con.exe file_new.pcx
+7. Rename file_new.dc6 to final_file.dc6
+8. Check that new .DC6 file is shown correctly:
+  run dc6con.exe final_file.dc6
+  check resulting final_file.pcx file is correctly shown
